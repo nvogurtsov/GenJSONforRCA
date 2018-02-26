@@ -86,5 +86,5 @@ data = generate_file(levels)
 
 print(data)
 
-with open("C:\Tecom\Qligent\RCA\gen\RCA.config", "w", encoding="utf-8") as file:
+with open(filename_work, "w", encoding="utf-8") as file:
     json.dump(data, file)

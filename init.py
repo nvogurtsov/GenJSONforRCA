@@ -1,3 +1,6 @@
+filename_work = "C:\Tecom\Qligent\RCA\gen\RCA.config"
+filename_home = "C:\RCA.config"
+
 parameters, tasks, modules, agents, levels = [], [], [], [], []
 taskKey = "VLG-NN-CBS-1.SNMPMonitor.VLG-NNOV-MRF SIB.FED.028.SD4.TS1"
 alertTypeName = "qos.RCA.testChanelNN"

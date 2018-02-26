@@ -1,8 +1,8 @@
 import psycopg2
 
 dbname = "qos"
-user = "qos"
-password = "Tecom1"
+user = ""
+password = ""
 host = "localhost"
 port = "8886"
 

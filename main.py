@@ -7,8 +7,8 @@ module = "SNMPMonitor"
 branch = "NN"
 priority = len(tasks_list)
 
-for channel in tasks_list:
-    tmp_data = generate_agent(generate_modules(generate_tasks(generate_params(module), channel), module), branch)
+for task in tasks_list:
+    tmp_data = generate_agent(generate_modules(generate_tasks(generate_params(module), task), module), branch)
     generate_level(copy.deepcopy(tmp_data), priority, "level " + str(priority))
     priority -= 1
 

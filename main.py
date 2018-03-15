@@ -6,8 +6,12 @@ from functions import *
 def make_channel_config(module, branch):
     priority = len(tasks_list)
     for task in tasks_list:
-        tmp_data = generate_agent(generate_modules(generate_tasks(generate_params(module), task), module), branch)
-        generate_level(copy.deepcopy(tmp_data), priority, "level " + str(priority))
+        params_t = generate_params(module)
+        tasks_t = generate_tasks(params_t, task)
+        modules_t = generate_modules(tasks_t, module)
+        agents_t = generate_agent(modules_t, branch)
+        #tmp_data = generate_agent(generate_modules(generate_tasks(generate_params(module), task), module), branch)
+        generate_level(copy.deepcopy(agents_t), priority, "level " + str(priority))
         priority -= 1
 
 

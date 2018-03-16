@@ -61,6 +61,6 @@ def generate_level(lst, i, l_name):
     return levels
 
 
-def generate_file(lst):
+def generate_file(lst, tsk):
     return {name: config_name, rules_name: rule, rcaSeverity_name: 5, originatorId_name: originatorId,
-            taskKey_name: taskKey, alertTypeName: alertType, levels_name: lst}
+            taskKey_name: tsk, alertTypeName: alertType, levels_name: lst}

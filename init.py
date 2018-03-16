@@ -15,7 +15,7 @@ agents_list = {"KV": "m7-ql-bks01",
                "CH": "m7-ql-bks11",
                "TT": "m7-ql-bks12"}
 
-modules_list = ["SNMPMonitor"]
+#modules_list = ["SNMPMonitor"]
 tasks_list = ["VLG-NNOV-MRF SIB.FED.028.SD4.TS1",
               "VLG-NNOV-RF SZF.FED.032.SD4.0S1", "VLG-NNOV2-MRF SZF.FED.956.HD4.0S1"]   #"MLR", "NoSignal", "BitratePeak"
 params_list = {"SNMPMonitor": ["IAT"],

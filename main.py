@@ -21,8 +21,8 @@ def make_probe_config(t_module, t_branch):
 
 branch = "NN"
 module = "SNMPMonitor"
-
 taskKey = agents_list[branch] + "." + module + "." + tasks_list[0]
+
 make_channel_config(module, branch)
 
 data = generate_file(levels)

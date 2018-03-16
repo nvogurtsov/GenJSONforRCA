@@ -24,7 +24,6 @@ params_list = {"SNMPMonitor": ["IAT"],
                "TR101290": ["Continuity_count_err"]}
 
 
-taskKey = agents_list["NN"] + "." + modules_list[0] + "." + tasks_list[0]
 alertType = "qos.RCA.testChanelNN"
 originatorId = 1522072
 config_name = "Test RCA NN channels"

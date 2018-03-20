@@ -1,5 +1,6 @@
 import json
 import copy
+from config import *
 from functions import *
 
 
@@ -7,7 +8,7 @@ def make_channel_config(t_module, t_branch):
     priority = len(tasks_list)
     for task in tasks_list:
         params_t = generate_params(t_module)
-        tasks_t = generate_tasks(params_t, task)
+        tasks_t = generate_tasks(params_t, task, True)
         modules_t = generate_modules(tasks_t, t_module)
         agents_t = generate_agent(modules_t, t_branch)
         #tmp_data = generate_agent(generate_modules(generate_tasks(generate_params(module), task), module), branch)

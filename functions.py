@@ -12,8 +12,8 @@ def generate_params(md):
     return parameters
 
 
-def generate_tasks(lst, t_list):
-    if tasks:
+def generate_tasks(lst, t_list, clear_flag):
+    if clear_flag:
         tasks.clear()
 
 #    if i == 1:

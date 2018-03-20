@@ -13,7 +13,8 @@ agents_list = {"KV": "m7-ql-bks01",
                "UD": "m7-ql-bks09",
                "UL": "m7-ql-bks10",
                "CH": "m7-ql-bks11",
-               "TT": "m7-ql-bks12"}
+               "TT": "m7-ql-bks12",
+               "Probe": "probe1cbba8ffff18"}
 
 #modules_list = ["SNMPMonitor"]
 tasks_list = ["VLG-NNOV-MRF SIB.FED.028.SD4.TS1",

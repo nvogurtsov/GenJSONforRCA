@@ -16,32 +16,22 @@ def generate_tasks(lst, t_list, clear_flag):
     if clear_flag:
         tasks.clear()
 
-#    if i == 1:
-#        tasks_lvl = tasks_list[0]
-#        tasks.append({name: tasks_lvl, parameters_name: lst})
-#        return tasks
-#    elif i == 'full':
-#        tasks_lvl = tasks_list[:]
-#        for task in tasks_lvl:
-#            tasks.append({name: task, parameters_name: lst})
-#        return tasks
-#    elif i == 2:
-#        tasks_lvl = tasks_list[1:len(tasks_list)]
-#        for task in tasks_lvl:
-#            tasks.append({name: task, parameters_name: lst})
-#        return tasks
-#     if len(t_list) >= 2:
-#         tasks_lvl = t_list
-#         for task in tasks_lvl:
-#             tasks.append({name: task, parameters_name: lst})
-#         return tasks
     if t_list:
         tasks.append({name: t_list, parameters_name: lst})
         return tasks
 
 
-def generate_modules(lst, mname):
-    if modules:
+def generate_probe_tasks(lst, task_list, clear_flag):
+    if clear_flag:
+        tasks.clear()
+
+    for task in task_list:
+        tasks.append({name: task, parameters_name: lst})
+    return tasks
+
+
+def generate_modules(lst, mname, clear_flag):
+    if clear_flag:
         modules.clear()
 
     modules.append({name: mname, tasks_name: lst})
@@ -56,7 +46,10 @@ def generate_agent(lst, branch):
     return agents
 
 
-def generate_level(lst, i, l_name):
+def generate_level(lst, i, l_name, clear_flag):
+    if clear_flag:
+        levels.clear()
+
     levels.append({name: l_name, priority_name: i, agents_name: lst})
     return levels
 

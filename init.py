@@ -18,8 +18,8 @@ agents_list = {"KV": "m7-ql-bks01",
 
 #modules_list = ["SNMPMonitor"]
 tasks_list = ["VLG-NNOV-MRF SIB.FED.028.SD4.TS1",
-              "VLG-NNOV-RF SZF.FED.032.SD4.0S1", "VLG-NNOV2-MRF SZF.FED.956.HD4.0S1"]   #"MLR", "NoSignal", "BitratePeak"
-params_list = {"SNMPMonitor": ["IAT"],
+              "VLG-NNOV-RF SZF.FED.032.SD4.0S1", "VLG-NNOV2-MRF SZF.FED.956.HD4.0S1"]
+params_list = {"SNMPMonitor": ["IAT", "MLR", "NoSignal", "BitratePeak"],
                "IPStatistics": ["averageJitter", "mediaLossRate", "mediaLossTotal"],
                "MpegTSStatisticsIPTVControlModule": ["overallBitrate"],
                "TR101290": ["Continuity_count_err"]}
